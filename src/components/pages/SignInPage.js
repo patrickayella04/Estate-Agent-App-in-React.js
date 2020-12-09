@@ -23,11 +23,11 @@ function SignInPage() {
                 </Link> 
                 
             <Link to='/home' >
-                <li>SignIn</li>
+                <li>Sign In</li>
                 </Link> 
                 
                 <Link to='/forgottenPassword' >
-                <li>Forgotten Sign in?</li>
+                <li>Forgotten Sign In?</li>
             </Link> 
         
         

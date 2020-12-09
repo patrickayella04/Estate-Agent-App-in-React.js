@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AddTimeEntryForm from './add-time-entry-form';
+import TimesList from './time-list';
+
+
 
 
 
@@ -18,7 +22,11 @@ function AppointmentsPage() {
         
             <div className="profile">
 
-            <h1>All Appoinments </h1>
+                <h1>All Appoinments </h1>
+                <TimesList />
+                <AddTimeEntryForm />
+
+
                 
 
                 <Link to='/' >

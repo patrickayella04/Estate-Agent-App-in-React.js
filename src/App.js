@@ -1,6 +1,8 @@
 import './App.scss';
+
 import HomePage from './components/pages/HomePage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import SignInPage from './components/pages/SignInPage';
 import ProfilePage from './components/pages/ProfilePage';
 import AppointmentsPage from './components/pages/AppoinmentsPage';
@@ -9,6 +11,17 @@ import CreatePropertiesPage from './components/pages/CreateProperties';
 import CreateCustomersPage from './components/pages/CreateCustomers';
 import ForgottenSignInPage from './components/pages/ForgottenSignInPage';
 import CreateNewAccountPage from './components/pages/CreateNewAccount';
+
+// import firebase from './firebase';
+
+
+// firebase.firestore().collection('times').add({
+//   title: 'Rubik\'s Cube', 
+//   time_seconds: 45
+// })
+
+
+
 
 function App() {
   return (
