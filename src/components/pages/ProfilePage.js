@@ -22,19 +22,19 @@ function ProfilePage() {
                 
 
                 <Link to='apps' >
-                <li>appointments</li>
+                <li>Create appointments</li>
                 </Link> 
 
-                <Link to='createApps' >
+                {/* <Link to='createApps' >
                 <li>create appointments</li>
-                </Link> 
+                </Link>  */}
 
                 <Link to='createProp' >
-                <li>create property</li>
+                <li>Create property</li>
                 </Link> 
 
                 <Link to='createCustom' >
-                <li>create customer</li>
+                <li>Create customer</li>
                 </Link> 
             
             </div> 

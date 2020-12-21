@@ -46,15 +46,20 @@ function TimesList() {
         <div>
 
             <ol>
-                {appointments.map(({id, time_hours, title }) =>
+                {appointments.map(({id, time_hours, title, date }) =>
                     
                     <li key={id}>
                         <div className="time-entry">
                             {title}
+                            <br/> {date}
                     
                             <br />
                             <code className="time">
                                 {time_hours} </code> Hours
+                            
+                           
+                            
+
                     </div>
                     </li>
                 )}

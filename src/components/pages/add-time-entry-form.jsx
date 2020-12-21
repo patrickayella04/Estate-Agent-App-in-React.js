@@ -7,7 +7,8 @@ const AddTimeEntryForm = () => {
     // We are cacheing values into the below variables.
 
     const [ title, setTitle ] = useState('') 
-    const [ time, setTime ] = useState('')
+    const [time, setTime] = useState('')
+    const [ date, setDate ] = useState('')
     
     function onSubmit(e) {
 
@@ -18,10 +19,12 @@ const AddTimeEntryForm = () => {
             .collection('times')
             .add({
                 title,
+                date,
                 time_hours: parseInt(time) //The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems ie. Binary, Decimal etc. ).
             }).then(() => {
                 setTime('')
                 setTitle('')
+                setDate('')
             })
 
         
@@ -43,6 +46,10 @@ const AddTimeEntryForm = () => {
             <div>
                 <label>Time</label>
                 <input type="number" value={time} onChange={e => setTime(e.currentTarget.value) }/>
+            </div>
+            <div>
+                <label>Date</label>
+                <input type="text" value={date} onChange={e => setDate(e.currentTarget.value) }/>
             </div>
             <button>Add Time Entry</button>
         </form>

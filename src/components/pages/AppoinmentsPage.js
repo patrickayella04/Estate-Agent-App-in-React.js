@@ -22,7 +22,7 @@ function AppointmentsPage() {
         
             <div className="profile">
 
-                <h1>All Appoinments </h1>
+                <h1>Create Appoinments </h1>
                 <AddTimeEntryForm />
                 <TimesList />
                 
